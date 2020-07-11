@@ -44,12 +44,12 @@
 
 3. **Follows popular accounts:** Retweets tweet from popular accounts that consistently put out quality tweets for developers.
 
-> Please review [config.js file](/blob/master/config.js) and add your favourite accounts by opening pull requests.
+> Please review [config.js file](/config.js) and add your favourite accounts by opening pull requests.
 
 
 ## Setup
 
-Check the [config.js file](/blob/master/config.js) and change the values as per need.
+Check the [config.js file](/config.js) and change the values as per need.
 
 You will also need a twitter developer account and your API keys.
 
