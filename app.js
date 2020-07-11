@@ -46,7 +46,7 @@ function like(favId) {
         console.log("Sleeping for next 2 hours likeCount = " + likeCount);
         likeCount = 0;
         likeStream.stop();
-        setTimeout(startLikeStream(), 1000 * 60 * 60 * 2);
+        setTimeout(startLikeStream, 1000 * 60 * 60 * 2);
       }
 
       await sleep(1000);
@@ -61,7 +61,7 @@ function like(favId) {
         console.error(err.message);
         likeStream.stop();
         console.log("Going to sleep .... likeCount = " + likeCount);
-        setTimeout(startLikeStream(), 1000 * 60 * 60 * 2);
+        setTimeout(startLikeStream, 1000 * 60 * 60 * 2);
       } else {
         console.error("Error: id - " + favId + " Message: " + err.message);
       }
@@ -87,7 +87,7 @@ function retweet(tweetId) {
         );
         retweetCount = 0;
         retweetStream.stop();
-        setTimeout(startRetweetStream(), 1000 * 60 * 60 * 2);
+        setTimeout(startRetweetStream, 1000 * 60 * 60 * 2);
       }
 
       await sleep(1000);
@@ -102,7 +102,7 @@ function retweet(tweetId) {
         console.error(err.message);
         retweetStream.stop();
         console.log("Going to sleep .... Retweet Count = " + retweetCount);
-        setTimeout(startRetweetStream(), 1000 * 60 * 60 * 2);
+        setTimeout(startRetweetStream, 1000 * 60 * 60 * 2);
       } else {
         console.error("Error: id - " + tweetId + " Message: " + err.message);
       }
